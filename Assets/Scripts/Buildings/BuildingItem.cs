@@ -42,6 +42,14 @@ public class BuildingItem : MonoBehaviour
 
     public int[] UpgradePricePerLevel => upgradePricePerLevel;
 
+    private event Action<int> onBuildingUpgrade;
+    public event Action<int> OnBuildingUpgrade
+    {
+        add => onBuildingUpgrade += value ?? throw new NullReferenceException();
+        
+        remove => onBuildingUpgrade -= value ?? throw new NullReferenceException();
+    }
+
     private void Start()
     {
         SetFields();
@@ -87,8 +95,9 @@ public class BuildingItem : MonoBehaviour
             throw new Exception("ДОСТИГНУТ МАКСИМАЛЬНЫЙ УРОВЕНЬ, УЛУЧШЕНИЕ НЕВОЗМОЖНО!");
         
         buildingLevel++;
-
+        
         spriteRenderer.sprite = buildingSpritePerLevel[buildingLevel];
+        onBuildingUpgrade?.Invoke(buildingLevel);
     }
 
     private void UpgradeNotificationCheck(int moneyCount)
