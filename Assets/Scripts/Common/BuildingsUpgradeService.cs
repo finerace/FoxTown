@@ -29,6 +29,8 @@ public class BuildingsUpgradeService : MonoBehaviour
         selectedBuildingItem = buildingItem;
         
         upgradePanel.SetUpgradePanelActive(true);
+        upgradePanel.PanelT.position = buildingItem.BuildingT.position;
+        
         upgradePanel.UpdateLabels(selectedBuildingItem);
     }
 

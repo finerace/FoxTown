@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BuildingsUpgradePanel : MonoBehaviour
 {
+    [SerializeField] private Transform panelT;
     [SerializeField] private GameObject buildingsUpgradePanelObj;
 
     [Space]
@@ -14,8 +15,12 @@ public class BuildingsUpgradePanel : MonoBehaviour
     [SerializeField] private TMP_Text buildingLevelLabel;
     
     [SerializeField] private TMP_Text buildingMoneyEarningLabel;
+    [SerializeField] private TMP_Text buildingEarnCooldownPriceLabel;
+
     [SerializeField] private TMP_Text buildingUpgradePriceLabel;
 
+    public Transform PanelT => panelT;
+    
     private void Start()
     {
         buildingsUpgradePanelObj.SetActive(false);
@@ -29,7 +34,7 @@ public class BuildingsUpgradePanel : MonoBehaviour
         buildingLevelLabel.text = $"Уровень {buildingItem.BuildingLevel}";
         
         buildingMoneyEarningLabel.text = $"{buildingItem.MoneyEarnCountPerLevel[currentBuildingLevel]}";
-
+        buildingEarnCooldownPriceLabel.text = $"{buildingItem.MoneyEarnCooldownPerLevel[currentBuildingLevel]}s";
 
         if (!(buildingItem.BuildingLevel >= buildingItem.MaxBuildingBuildingLevel))
             buildingUpgradePriceLabel.text = $"{buildingItem.UpgradePricePerLevel[currentBuildingLevel]}";

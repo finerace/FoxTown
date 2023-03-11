@@ -8,6 +8,8 @@ public class BuildingItem : MonoBehaviour
 
     private PlayerMoneyService playerMoneyService;
     private BuildingsUpgradeService buildingsUpgradeService;
+    private Transform buildingT;
+    
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private GameObject notificationObj;
     
@@ -18,6 +20,9 @@ public class BuildingItem : MonoBehaviour
     [SerializeField] private int maxBuildingLevel;
 
     [Space] 
+    
+    private float moneyEarnTimer;
+    [SerializeField] private bool isMoneyEarnReady;
     
     [SerializeField] private float[] moneyEarnCooldownPerLevel;
     [SerializeField] private int[] moneyEarnCountPerLevel;
@@ -35,19 +40,38 @@ public class BuildingItem : MonoBehaviour
     public int BuildingLevel => buildingLevel;
 
     public int MaxBuildingBuildingLevel => maxBuildingLevel;
-    
+
+    public float MoneyEarnTimer => moneyEarnTimer;
+
+    public bool IsMoneyEarnReady => isMoneyEarnReady;
+
     public float[] MoneyEarnCooldownPerLevel => moneyEarnCooldownPerLevel;
 
     public int[] MoneyEarnCountPerLevel => moneyEarnCountPerLevel;
 
     public int[] UpgradePricePerLevel => upgradePricePerLevel;
 
+    public Transform BuildingT => buildingT;
+    
     private event Action<int> onBuildingUpgrade;
     public event Action<int> OnBuildingUpgrade
     {
         add => onBuildingUpgrade += value ?? throw new NullReferenceException();
         
         remove => onBuildingUpgrade -= value ?? throw new NullReferenceException();
+    }
+    
+    private event Action onMoneyEarn;
+    public event Action OnMoneyEarn
+    {
+        add => onMoneyEarn += value ?? throw new NullReferenceException();
+        
+        remove => onMoneyEarn -= value ?? throw new NullReferenceException();
+    }
+
+    private void Awake()
+    {
+        buildingT = transform;
     }
 
     private void Start()
@@ -58,29 +82,23 @@ public class BuildingItem : MonoBehaviour
             playerMoneyService = PlayerMoneyService.instance;
             buildingsUpgradeService = BuildingsUpgradeService.instance;
         }
-
-        StartCoroutine(MoneyEarnCycle());
-
+        
         playerMoneyService.OnMoneyCountChange += UpgradeNotificationCheck;
 
         spriteRenderer.sprite = buildingSpritePerLevel[buildingLevel];
     }
 
-    private IEnumerator MoneyEarnCycle()
+    private void Update()
     {
-        YieldInstruction idleWaitTime = new WaitForSeconds(2);
-
-        while (true)
+        if (!isMoneyEarnReady)
         {
-            if (moneyEarnCooldownPerLevel[buildingLevel] <= 0)
-            {
-                yield return idleWaitTime;
-                continue;
-            }
-            
-            yield return new WaitForSeconds(moneyEarnCooldownPerLevel[buildingLevel]);
+            moneyEarnTimer += Time.deltaTime;
 
-            playerMoneyService.MoneyCount += moneyEarnCountPerLevel[buildingLevel];
+            if (moneyEarnTimer >= moneyEarnCooldownPerLevel[buildingLevel])
+            {
+                isMoneyEarnReady = true;
+                onMoneyEarn?.Invoke();
+            } 
         }
     }
 
@@ -89,6 +107,18 @@ public class BuildingItem : MonoBehaviour
         buildingsUpgradeService.OpenUpgradePanel(this);
     }
 
+    public void CollectMoney()
+    {
+        if (!isMoneyEarnReady)
+            return;
+
+        playerMoneyService.MoneyCount += moneyEarnCountPerLevel[buildingLevel];
+
+        isMoneyEarnReady = false;
+        moneyEarnTimer = 0;
+
+    }
+    
     public void UpgradeLevel()
     {
         if(buildingLevel >= maxBuildingLevel)
