@@ -74,6 +74,10 @@ public class BuildingItem : MonoBehaviour
     public Transform BuildingT => buildingT;
 
     private bool isSelected;
+
+    public bool isLeftMenu;
+
+    public float y;
     
     private event Action<int> onBuildingUpgrade;
     public event Action<int> OnBuildingUpgrade

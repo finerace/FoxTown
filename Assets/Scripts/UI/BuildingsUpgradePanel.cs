@@ -12,11 +12,11 @@ public class BuildingsUpgradePanel : MonoBehaviour
     [Space]
     
     [SerializeField] private TMP_Text buildingNameLabel;
-    [SerializeField] private TMP_Text buildingLevelLabel;
     
     [SerializeField] private TMP_Text buildingMoneyEarningLabel;
-    [SerializeField] private TMP_Text buildingEarnCooldownPriceLabel;
+    [SerializeField] private TMP_Text moneyEarnCooldown;
 
+    
     [SerializeField] private TMP_Text buildingUpgradePriceLabel;
 
     public Transform PanelT => panelT;
@@ -31,11 +31,11 @@ public class BuildingsUpgradePanel : MonoBehaviour
         var currentBuildingLevel = buildingItem.BuildingLevel; 
         
         buildingNameLabel.text = $"{buildingItem.BuildingName}";
-        buildingLevelLabel.text = $"Уровень {buildingItem.BuildingLevel}";
         
         buildingMoneyEarningLabel.text = $"{buildingItem.MoneyEarnCountPerLevel[currentBuildingLevel]}";
-        buildingEarnCooldownPriceLabel.text = $"{buildingItem.MoneyEarnCooldownPerLevel[currentBuildingLevel]}s";
 
+        moneyEarnCooldown.text = $"{buildingItem.MoneyEarnCooldownPerLevel[currentBuildingLevel]} сек." ;
+        
         if (!(buildingItem.BuildingLevel >= buildingItem.MaxBuildingBuildingLevel))
             buildingUpgradePriceLabel.text = $"{buildingItem.UpgradePricePerLevel[currentBuildingLevel]}";
         else

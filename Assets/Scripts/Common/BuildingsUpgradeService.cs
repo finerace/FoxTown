@@ -52,7 +52,13 @@ public class BuildingsUpgradeService : MonoBehaviour
         selectedBuildingItem = buildingItem;
         
         upgradePanel.SetUpgradePanelActive(true);
-        upgradePanel.PanelT.position = buildingItem.BuildingT.position;
+        
+        if(buildingItem.isLeftMenu)
+            upgradePanel.PanelT.position = buildingItem.BuildingT.position - (-Vector3.left * 8);
+        else
+            upgradePanel.PanelT.position = buildingItem.BuildingT.position;
+
+        upgradePanel.PanelT.position += new Vector3(0, buildingItem.y, 0);
         
         upgradePanel.UpdateLabels(selectedBuildingItem);
         
@@ -88,7 +94,8 @@ public class BuildingsUpgradeService : MonoBehaviour
         playerMoneyService.MoneyCount -= buildingUpgradePrice;
 
         audioPoolService.CastAudio(upgradeSound);
-
+        
+        CloseUpgradePanel();
     }
 
     public void CastCollectMoneySound()
