@@ -58,7 +58,7 @@ public class BuildingsUpgradeService : MonoBehaviour
         else
             upgradePanel.PanelT.position = buildingItem.BuildingT.position;
 
-        upgradePanel.PanelT.position += new Vector3(0, buildingItem.y, 0);
+        upgradePanel.PanelT.position += new Vector3(buildingItem.x, buildingItem.y, 0);
         
         upgradePanel.UpdateLabels(selectedBuildingItem);
         

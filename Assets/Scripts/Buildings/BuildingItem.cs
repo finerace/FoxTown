@@ -78,6 +78,7 @@ public class BuildingItem : MonoBehaviour
     public bool isLeftMenu;
 
     public float y;
+    public float x;
     
     private event Action<int> onBuildingUpgrade;
     public event Action<int> OnBuildingUpgrade

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,1288 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: anthony Atlas_00_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b540bd7c5bbcbe346abbd3ff4018c71c
+      internalID: 900731184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cdb48d23e3ff040bbb2f2061efd305
+      internalID: -721002191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cd96f2467baa84cbe47d3c7902ac01
+      internalID: -617041865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_3
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3f6ef03cfd64c4aa8a7706be196c3f
+      internalID: 1367836891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_4
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f921b6b20e0314a428b2a689f3f1389b
+      internalID: 105119854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_5
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f806904c475e6ad41aa4f66bbb18c7ea
+      internalID: -342906663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_6
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af20aa44f2cd7a469f10301b1e0a896
+      internalID: 1043671276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_7
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 3395
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4055e4bd926bce64ea1626b591d82a91
+      internalID: -1465871374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb615dcf126a594fa631a7400a6e05a
+      internalID: -1689734324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770031bfd60e24e4985be4aa626311e9
+      internalID: -2028591267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91763498358457c4eac41a76a93edf82
+      internalID: -1767693078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4712450959611394b9797ffe4dc21a0b
+      internalID: -255762502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_12
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532e679d7d4ab0246a97edadf16ceac1
+      internalID: -1095787657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_13
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a14d4783e667a41b34596550618d10
+      internalID: 1670860047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_14
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbd17e141abe4049ac208d95a0b1909
+      internalID: 830151183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_15
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2910
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7653b97db670f6d47a511f8c7c118261
+      internalID: -963199860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7a3412d408f274986f5bc1615e42d8
+      internalID: 438268199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_17
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9705bd049465145978f7f69400ab26
+      internalID: -1794442633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_18
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80f68fb549eb304ba6e5f445e929223
+      internalID: -106914263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_19
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb4017d102bb7d4b8acd1c04979840b
+      internalID: -1840507333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_20
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded20c48e1bc670479e67ec27bb8ab3c
+      internalID: -1827205829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_21
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6607ff1bdcd05c4a8c32402e1d9ceb6
+      internalID: 627447624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_22
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165a30f37caea77488788ad1cf2ce476
+      internalID: 360898270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_23
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 2425
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e242f6d1c031840997fa51030a9468
+      internalID: -2070898358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a62c0e8c56090b409d4d22083743a77
+      internalID: 1744051789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_25
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9d44afa90ca1f4c9e6627f25c5cc91
+      internalID: -176351632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_26
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b196d0d33e0af41bc50e71522a327c
+      internalID: -1591672414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_27
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f818eef8d57864a9d6f67af476a331
+      internalID: 775156856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_28
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72d42f01dc759c429589006479ec4d2
+      internalID: 948073596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_29
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb39c9f7fca24634aa424f95db3d6a71
+      internalID: -1457214898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_30
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51adbfccb3390b44188589b5c3855af2
+      internalID: 1627679355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_31
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1940
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40cf3ad1ce1c5f44b767bcae32c5bf0
+      internalID: -74874574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647e2910dc29bcb4d91d756e9dda743e
+      internalID: -1026007061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d3a2a3894f6884b9d38b414c3268e2
+      internalID: 444414168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_34
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501dbebc157e5a74782f0f7426ec39d3
+      internalID: 983744265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_35
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14350e66325ff9d428d777e5e2d66b6b
+      internalID: 139590314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_36
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fcb23c79c653b47908976e4b11310e
+      internalID: 620455076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_37
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df443a2897284bf4786969093e6ea891
+      internalID: -723439720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_38
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14693ee93317681468f36adad7c665e3
+      internalID: -2041377891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_39
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 1455
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661d5544d8a6a264aba1442e7b61030c
+      internalID: 1856077422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8e78172c80d2c4da42cd0c3776eac1
+      internalID: 501143997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_41
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc80e54258cdfc4597b7a58e06dcc0e
+      internalID: 863351323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_42
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad21a80b33255941b91a73c14480aa1
+      internalID: -1194645853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_43
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54aecbfb44db8e6488e5d1e582c24638
+      internalID: 56654173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_44
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd9ee963a30ebf48a4beabd57907f99
+      internalID: -397040727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_45
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365fe582d7fe1e24382397a5b68c5f3c
+      internalID: -528768618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_46
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1a34c9272a49b46a49a060e21bc151
+      internalID: -451749819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_47
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 970
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1717fff4043771c47bdb13a6c81a20f0
+      internalID: 925654554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cfb0dfe8e77d6418c018a6318b7405
+      internalID: -1015197904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_49
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c52010cbaab9c48beb3ed6b7570e13
+      internalID: 935326559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_50
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7bb776a27923a44932c2c172405041
+      internalID: 1972070646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_51
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b663165f131b5ef4386aef326943a984
+      internalID: -155537129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_52
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e55471ecece4044f91f4e50be4f6de0
+      internalID: -1031515290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_53
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455290aa217ca774ea8bba158288968d
+      internalID: -1566512872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_54
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed82cc55c746de488101161921d4ca1
+      internalID: 1362135736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_55
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 485
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c733033f490434f96ae0494027d082
+      internalID: 450198192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e629fefcda4f794ba318134275046da
+      internalID: -269706444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_57
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5370140a220ced444ae5e99676c5c48c
+      internalID: 914654032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_58
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40c6dedffada7249b3a4f8c2fe5d83d
+      internalID: -471263442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_59
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875c7e362d087e548a3b6a05cb2bd785
+      internalID: 1904364382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anthony Atlas_00_60
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 0
+        width: 485
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebce78e574e98742844b99d85f9ac22
+      internalID: 1188272214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +1419,68 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      anthony Atlas_00_15: -963199860
+      anthony Atlas_00_19: -1840507333
+      anthony Atlas_00_7: -1465871374
+      anthony Atlas_00_33: 444414168
+      anthony Atlas_00_10: -1767693078
+      anthony Atlas_00_40: 501143997
+      anthony Atlas_00_6: 1043671276
+      anthony Atlas_00_50: 1972070646
+      anthony Atlas_00_46: -451749819
+      anthony Atlas_00_13: 1670860047
+      anthony Atlas_00_56: -269706444
+      anthony Atlas_00_60: 1188272214
+      anthony Atlas_00_55: 450198192
+      anthony Atlas_00_54: 1362135736
+      anthony Atlas_00_47: 925654554
+      anthony Atlas_00_11: -255762502
+      anthony Atlas_00_45: -528768618
+      anthony Atlas_00_9: -2028591267
+      anthony Atlas_00_22: 360898270
+      anthony Atlas_00_16: 438268199
+      anthony Atlas_00_27: 775156856
+      anthony Atlas_00_42: -1194645853
+      anthony Atlas_00_23: -2070898358
+      anthony Atlas_00_48: -1015197904
+      anthony Atlas_00_52: -1031515290
+      anthony Atlas_00_58: -471263442
+      anthony Atlas_00_1: -721002191
+      anthony Atlas_00_59: 1904364382
+      anthony Atlas_00_51: -155537129
+      anthony Atlas_00_38: -2041377891
+      anthony Atlas_00_49: 935326559
+      anthony Atlas_00_21: 627447624
+      anthony Atlas_00_28: 948073596
+      anthony Atlas_00_57: 914654032
+      anthony Atlas_00_44: -397040727
+      anthony Atlas_00_26: -1591672414
+      anthony Atlas_00_30: 1627679355
+      anthony Atlas_00_14: 830151183
+      anthony Atlas_00_31: -74874574
+      anthony Atlas_00_18: -106914263
+      anthony Atlas_00_43: 56654173
+      anthony Atlas_00_35: 139590314
+      anthony Atlas_00_3: 1367836891
+      anthony Atlas_00_25: -176351632
+      anthony Atlas_00_5: -342906663
+      anthony Atlas_00_29: -1457214898
+      anthony Atlas_00_32: -1026007061
+      anthony Atlas_00_2: -617041865
+      anthony Atlas_00_36: 620455076
+      anthony Atlas_00_34: 983744265
+      anthony Atlas_00_53: -1566512872
+      anthony Atlas_00_24: 1744051789
+      anthony Atlas_00_12: -1095787657
+      anthony Atlas_00_39: 1856077422
+      anthony Atlas_00_41: 863351323
+      anthony Atlas_00_4: 105119854
+      anthony Atlas_00_17: -1794442633
+      anthony Atlas_00_20: -1827205829
+      anthony Atlas_00_0: 900731184
+      anthony Atlas_00_37: -723439720
+      anthony Atlas_00_8: -1689734324
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
