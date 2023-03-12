@@ -39,7 +39,7 @@ public class BuildingsUpgradePanel : MonoBehaviour
         if (!(buildingItem.BuildingLevel >= buildingItem.MaxBuildingBuildingLevel))
             buildingUpgradePriceLabel.text = $"{buildingItem.UpgradePricePerLevel[currentBuildingLevel]}";
         else
-            buildingUpgradePriceLabel.text = "Всё куплено!";
+            buildingUpgradePriceLabel.text = "Макс ур.";
     }
 
     public void SetUpgradePanelActive(bool state)

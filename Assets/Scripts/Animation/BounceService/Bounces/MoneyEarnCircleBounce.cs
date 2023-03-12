@@ -18,8 +18,8 @@ public class MoneyEarnCircleBounce : AbstractBounceService
     {
         base.Start();
 
-        buildingItem.OnMoneyEarn += Bounce;
-        buildingItem.OnMoneyEarn += SetNewIdleCoroutine;
+        buildingItem.OnMoneyEarnReady += Bounce;
+        buildingItem.OnMoneyEarnReady += SetNewIdleCoroutine;
     }
 
     private void SetNewIdleCoroutine()

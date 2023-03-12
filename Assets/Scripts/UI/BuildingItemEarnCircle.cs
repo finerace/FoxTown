@@ -15,7 +15,16 @@ public class BuildingItemEarnCircle : MonoBehaviour
     
     [SerializeField] private GameObject earnedMoneyBubble;
     [SerializeField] private TMP_Text earnedMoneyLabel;
+
+    [Space] 
     
+    [SerializeField] private ParticleSystem earnMoneyParticle;
+
+    private void Start()
+    {
+        buildingItem.OnMoneyEarn += ActivateParticle;
+    }
+
     private void Update()
     {
         IndicatorWork();
@@ -63,4 +72,10 @@ public class BuildingItemEarnCircle : MonoBehaviour
             earnedMoneyBubble.SetActive(true);
     }
 
+    private void ActivateParticle()
+    {
+        if(earnMoneyParticle != null)
+            earnMoneyParticle.Play();
+    }
+    
 }

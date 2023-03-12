@@ -11,6 +11,28 @@ public class BuildingsUpgradeService : MonoBehaviour
         
     private BuildingItem selectedBuildingItem;
     
+    private event Action onDeselectBuilding;
+    public event Action OnDeselectBuilding
+    {
+        add => onDeselectBuilding += value ?? throw new NullReferenceException();
+        
+        remove => onDeselectBuilding -= value ?? throw new NullReferenceException();
+    }
+
+    private AudioPoolService audioPoolService;
+    
+    [SerializeField] private AudioCastData openPanelSound;
+    [SerializeField] private AudioCastData closePanelSound;
+    
+    [Space]
+    
+    [SerializeField] private AudioCastData moneyEarnSound;
+    
+    [Space]
+    
+    [SerializeField] private AudioCastData upgradeSound;
+    
+    
     private void Awake()
     {
         instance = this;
@@ -18,6 +40,7 @@ public class BuildingsUpgradeService : MonoBehaviour
 
     private void Start()
     {
+        audioPoolService = AudioPoolService.audioPoolServiceInstance;
         playerMoneyService = PlayerMoneyService.instance;
     }
 
@@ -32,12 +55,20 @@ public class BuildingsUpgradeService : MonoBehaviour
         upgradePanel.PanelT.position = buildingItem.BuildingT.position;
         
         upgradePanel.UpdateLabels(selectedBuildingItem);
+        
+        onDeselectBuilding?.Invoke();
+
+        audioPoolService.CastAudio(openPanelSound);
     }
 
     public void CloseUpgradePanel()
     {
         selectedBuildingItem = null;
         upgradePanel.SetUpgradePanelActive(false);
+        
+        onDeselectBuilding?.Invoke();
+
+        audioPoolService.CastAudio(closePanelSound);
     }
 
     public void UpgradeSelectedBuilding()
@@ -55,6 +86,14 @@ public class BuildingsUpgradeService : MonoBehaviour
         upgradePanel.UpdateLabels(selectedBuildingItem);
         
         playerMoneyService.MoneyCount -= buildingUpgradePrice;
+
+        audioPoolService.CastAudio(upgradeSound);
+
     }
-    
+
+    public void CastCollectMoneySound()
+    {
+        audioPoolService.CastAudio(moneyEarnSound);
+    }
+
 }

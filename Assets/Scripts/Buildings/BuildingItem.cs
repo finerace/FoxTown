@@ -11,6 +11,9 @@ public class BuildingItem : MonoBehaviour
     private Transform buildingT;
     
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer outlineSpriteRenderer;
+    [SerializeField] private SpriteRenderer buildingBottomPlatform;
+    
     [SerializeField] private GameObject notificationObj;
     
     [Space] 
@@ -30,11 +33,28 @@ public class BuildingItem : MonoBehaviour
     [Space] 
     
     [SerializeField] private Sprite[] buildingSpritePerLevel;
-    
+    [SerializeField] private Sprite[] buildingSpritePerLevelSelected;
+    [SerializeField] private Sprite[] buildingBottomPlatformPerLevel;
+
     [Space] 
     
     [SerializeField] private int[] upgradePricePerLevel;
 
+    [Space]
+    
+    [SerializeField] private GameObject moneyIndicators;
+    [SerializeField] private GameObject buyPlace;
+
+    [Space] 
+    
+    [SerializeField] private GameObject animatedCharacters;
+    [SerializeField] private ParticleSystem upgradeParticle;
+
+    [Space] 
+    
+    private AudioPoolService audioPoolService;
+    [SerializeField] private AudioCastData onUpgradeSound;
+    
     public string BuildingName => buildingName;
 
     public int BuildingLevel => buildingLevel;
@@ -52,6 +72,8 @@ public class BuildingItem : MonoBehaviour
     public int[] UpgradePricePerLevel => upgradePricePerLevel;
 
     public Transform BuildingT => buildingT;
+
+    private bool isSelected;
     
     private event Action<int> onBuildingUpgrade;
     public event Action<int> OnBuildingUpgrade
@@ -59,6 +81,14 @@ public class BuildingItem : MonoBehaviour
         add => onBuildingUpgrade += value ?? throw new NullReferenceException();
         
         remove => onBuildingUpgrade -= value ?? throw new NullReferenceException();
+    }
+    
+    private event Action onMoneyEarnReady;
+    public event Action OnMoneyEarnReady
+    {
+        add => onMoneyEarnReady += value ?? throw new NullReferenceException();
+        
+        remove => onMoneyEarnReady -= value ?? throw new NullReferenceException();
     }
     
     private event Action onMoneyEarn;
@@ -72,6 +102,13 @@ public class BuildingItem : MonoBehaviour
     private void Awake()
     {
         buildingT = transform;
+        
+        if(buildingLevel <= 0)
+            moneyIndicators.SetActive(false);
+        
+        if(animatedCharacters != null && buildingLevel <= 0)
+            animatedCharacters.SetActive(false);
+            
     }
 
     private void Start()
@@ -84,8 +121,9 @@ public class BuildingItem : MonoBehaviour
         }
         
         playerMoneyService.OnMoneyCountChange += UpgradeNotificationCheck;
-
-        spriteRenderer.sprite = buildingSpritePerLevel[buildingLevel];
+        
+        audioPoolService = AudioPoolService.audioPoolServiceInstance;
+        UpdateSprites();
     }
 
     private void Update()
@@ -97,16 +135,19 @@ public class BuildingItem : MonoBehaviour
             if (moneyEarnTimer >= moneyEarnCooldownPerLevel[buildingLevel])
             {
                 isMoneyEarnReady = true;
-                onMoneyEarn?.Invoke();
+                onMoneyEarnReady?.Invoke();
             } 
         }
     }
 
-    private void OnMouseDown()
+    private void OnMouseUp()
     {
         buildingsUpgradeService.OpenUpgradePanel(this);
+        outlineSpriteRenderer.gameObject.SetActive(true);
+        
+        buildingsUpgradeService.OnDeselectBuilding += DeselectBuilding;
     }
-
+    
     public void CollectMoney()
     {
         if (!isMoneyEarnReady)
@@ -116,7 +157,11 @@ public class BuildingItem : MonoBehaviour
 
         isMoneyEarnReady = false;
         moneyEarnTimer = 0;
+        
+        onMoneyEarn?.Invoke();
 
+        buildingsUpgradeService.CastCollectMoneySound();
+        
     }
     
     public void UpgradeLevel()
@@ -126,13 +171,27 @@ public class BuildingItem : MonoBehaviour
         
         buildingLevel++;
         
-        spriteRenderer.sprite = buildingSpritePerLevel[buildingLevel];
+        UpdateSprites();
+        
         onBuildingUpgrade?.Invoke(buildingLevel);
+        
+        if(buyPlace != null && buyPlace.activeSelf)
+            buyPlace.SetActive(false);
+
+        if(!moneyIndicators.activeSelf)
+            moneyIndicators.SetActive(true);
+        
+        if(animatedCharacters != null && !animatedCharacters.activeSelf)
+            animatedCharacters.SetActive(true);
+
+        audioPoolService.CastAudio(onUpgradeSound);
+        
+        upgradeParticle.Play();
     }
 
     private void UpgradeNotificationCheck(int moneyCount)
     {
-        if(buildingLevel >= maxBuildingLevel)
+        if(buildingLevel >= maxBuildingLevel || buildingLevel <= 0)
         {
             notificationObj.SetActive(false);
             return;
@@ -140,5 +199,53 @@ public class BuildingItem : MonoBehaviour
 
         var isBuildingCanUpgrade = moneyCount >= upgradePricePerLevel[buildingLevel];
         notificationObj.SetActive(isBuildingCanUpgrade);  
+    }
+
+    private void DeselectBuilding()
+    {
+        outlineSpriteRenderer.gameObject.SetActive(false);
+        
+        buildingsUpgradeService.OnDeselectBuilding -= DeselectBuilding;
+    }
+
+    private void UpdateSprites()
+    {
+        if (buildingSpritePerLevel[buildingLevel] != null)
+        {
+            spriteRenderer.color = Color.white;
+            spriteRenderer.sprite = buildingSpritePerLevel[buildingLevel];
+        }
+        else
+        {
+            spriteRenderer.color = GetClearColor();
+            spriteRenderer.sprite = null;
+        }
+        
+        if (buildingSpritePerLevelSelected[buildingLevel] != null)
+        {
+            outlineSpriteRenderer.color = Color.white;
+            outlineSpriteRenderer.sprite = buildingSpritePerLevelSelected[buildingLevel];
+        }
+        else
+        {
+            outlineSpriteRenderer.color = GetClearColor();
+            outlineSpriteRenderer.sprite = null;
+        }        
+        
+        if (buildingBottomPlatformPerLevel[buildingLevel] != null)
+        {
+            buildingBottomPlatform.color = Color.white;
+            buildingBottomPlatform.sprite = buildingBottomPlatformPerLevel[buildingLevel];
+        }
+        else
+        {
+            buildingBottomPlatform.color = GetClearColor();
+            buildingBottomPlatform.sprite = null;
+        }   
+        
+        Color GetClearColor()
+        {
+            return new Color(0, 0, 0, 0);
+        }
     }
 }
